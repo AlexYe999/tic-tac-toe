@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        <div class="score-box">
+            <img src="svg/restart.svg" alt="Restart Icon" class="restart-btn">
+            <div class="score-count">
+                <img src="svg/x.svg" alt="X symbol" style="width:1rem; height:1rem;">
+                <input type="text" placeholder="Player 1" class="player-name-input" maxlength=15>
+                <div class="x-score">0</div>
+            </div>
+            <div class="score-count">
+                <img src="svg/o.svg" alt="O symbol" style="width:1rem; height:1rem;">
+                <input type="text" placeholder="Player 2" class="player-name-input" maxlength=15>
+                <div class="o-score">0</div>
+            </div>
+
+        </div>
+        <div class="game-container">
+            <div class="game-grid grid-col-0 grid-row-0 diag-l" onmouseover="hoverAction(this)"></div>
+            <div class="game-grid grid-col-1 grid-row-0" onmouseover="hoverAction(this)"></div>
+            <div class="game-grid grid-col-2 grid-row-0 diag-r" onmouseover="hoverAction(this)"></div>
+            <div class="game-grid grid-col-0 grid-row-1" onmouseover="hoverAction(this)"></div>
+            <div class="game-grid grid-col-1 grid-row-1 diag-l diag-r" onmouseover="hoverAction(this)"></div>
+            <div class="game-grid grid-col-2 grid-row-1" onmouseover="hoverAction(this)"></div>
+            <div class="game-grid grid-col-0 grid-row-2 diag-r" onmouseover="hoverAction(this)"></div>
+            <div class="game-grid grid-col-1 grid-row-2" onmouseover="hoverAction(this)"></div>
+            <div class="game-grid grid-col-2 grid-row-2 diag-l" onmouseover="hoverAction(this)"></div>
+        </div>
+    </div>
+</body>
+
+</html>
